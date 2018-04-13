@@ -1,0 +1,31 @@
+#labels Featured
+_The documentation describing how to use and configure the Darkstar Profiler_
+
+= Introduction =
+
+The following classes are the basis of the project for now, read their pages on how to set them up:
+
+*RawDumpListener*: A profile listener that will dump all profiling info to a number of files.
+
+*ProfileViewer*: A GUI application that can display all kinds of statistics about execution based on the profiling data collected into files by the listener.
+
+Currently the profiler is "offline" as it is not connected directly to the Darkstar server. This could in the future be a feature worth considering.
+
+= Configuration =
+
+You can configure the profile RawDumpListener with the following properties in your sgs.properties file.
+
+{{{
+# An relative or absolute path to where you want the output of the profiler
+# to go. The directory does not need to exist, but it must be possible to 
+# create.
+# The default is "darkstar_profile_output" which is a relative path, relative
+# to the directory from which the server is launched.
+com.gamalocus.sgs.profile.listener.RawDumpListener.output_folder=profiling_output_folder
+
+# A long specifying how many milliseconds of profiling data will go into
+# each file before creating a new file. When you view the profiling data
+# with the viewer it will give you the list of files. 
+# The default is 60000 (one minute)
+com.gamalocus.sgs.profile.listener.RawDumpListener.max_age=120000
+}}}

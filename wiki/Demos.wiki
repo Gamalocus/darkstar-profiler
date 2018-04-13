@@ -1,0 +1,8 @@
+_The following is a collection of demo movies showing the profiler_
+
+= Current Demo =
+<wiki:gadget url="http://www.emanuelgreisen.dk/stuff/darkstar_profiler_2008.12.10.xml" height="768" width="1024" border="0" />
+
+
+= Old Demo =
+ * (2008-09-28) [http://emanuelgreisen.dk/stuff/SGS_install_with_eclipse/profiler_gui2.php Here is a very simple demo] showing an early version.

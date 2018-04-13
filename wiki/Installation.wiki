@@ -1,0 +1,27 @@
+#labels Featured
+_This page will describe how to install the profile listener and how to launch the profile viewer_
+
+= Introduction =
+
+You only need to install the profile listener. The viewer can be installed later or if you are on a `*`nix box you can launch it directly from the output directory.
+
+== Profiling Listener (Server side) ==
+ # Download [http://darkstar-profiler.googlecode.com/files/DarkstarProfileListener-0.0.5.jar DarkstarProfileListener-0.0.5.jar] and add it to the classpath of your server
+ # Put this line in your server properties file:
+{{{
+com.sun.sgs.impl.kernel.profile.listeners=com.gamalocus.sgs.profile.listener.RawDumpListener
+com.gamalocus.sgs.profile.listener.RawDumpListener.output_folder=my_profiling_output
+}}}
+ # Start your Darkstar server and play with it
+
+
+== Profiling Viewer (After running the server) ==
+ # Inside `my_profiling_output` you will find a small shell script, run it:
+{{{
+user@host:~/sgsproject/my_profiling_output$ sh profiler_viewer.sh
+}}}
+Or if you are not on a `*`nix box
+ # Download the [http://darkstar-profiler.googlecode.com/files/DarkstarProfileViewer-0.0.5.jar DarkstarProfilingViewer-0.0.5.jar] and call it with your output folder as argument:
+{{{
+user@host:~$ java -Xmx512M -jar DarkstarProfileViewer-0.0.5.jar my_profiling_output
+}}}

@@ -1,0 +1,16 @@
+How to display the gathered profile data
+
+= Introduction =
+
+The ProfileViewer can load the profile data stored into files by the RawDumpListener.
+
+
+= Usage =
+
+Here is how to use the ProfileViewer
+  # First configure the RawDumpListener and run you server (you don't have to stop it unless you get access problems - this might occur on windows).
+  # Start the ProfileViewer (it has a main-method).
+  # In the menu choose "File" -> "Load"
+  # Select the folder that you specified for output when setting up RawDumpListener
+  # Browse through your profiling info.
+  # If your server is still running, you can hit "File" -> "Load" again to reload the profiling data. More data might have come in. Beware that if it runs for too long, loading of the profiling data might take a long time... and there is currently no progress bar.

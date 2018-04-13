@@ -1,0 +1,17 @@
+How to obtain the profiling data
+
+= Introduction =
+
+This class is used to get all the profiling data into a file on the disc.
+
+
+
+= Configuration =
+
+To get the RawDumpListener running all you have to do is add these two lines to your
+Darkstar configuration file:
+
+{{{
+com.sun.sgs.impl.kernel.profile.listeners=com.gamalocus.sgs.profile.listener.RawDumpListener
+com.gamalocus.sgs.profile.listener.RawDumpListener.output_folder=/tmp/your_profiling_output
+}}}
