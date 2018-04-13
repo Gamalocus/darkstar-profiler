@@ -16,8 +16,13 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.projectdarkstar.server</groupId>
+			<artifactId>sgs-server-internal-api</artifactId>
+			<version>0.9.13-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.projectdarkstar.server</groupId>
 			<artifactId>sgs-server</artifactId>
-			<version>0.9.8-SNAPSHOT</version>
+			<version>0.9.13-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.projectdarkstar.ext.berkeleydb</groupId>

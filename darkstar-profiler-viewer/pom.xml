@@ -13,18 +13,25 @@
 	<url>http://code.google.com/p/darkstar-profiler/</url>
 	<description><![CDATA[Profiling utilities for Project Darkstar based applications]]></description>
 
+	<repositories>
+		<repository>
+			<id>repo.pentaho.org</id>
+			<name>repo.pentaho.org-snapshots</name>
+			<url>repository.pentaho.org/artifactory/repo</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>jfree</groupId>
 			<artifactId>jcommon</artifactId>
-			<version>1.0.14</version>
+			<version>1.0.16</version>
 			<!-- scope>provided</scope-->
 		</dependency>
 		<dependency>
 			<groupId>jfree</groupId>
 			<artifactId>jfreechart</artifactId>
-			<version>1.0.11</version>
-			<!--scope>provided</scope-->
+			<version>1.0.13</version>
 		</dependency>
 		<dependency>
 			<groupId>com.gamalocus.sgs</groupId>
